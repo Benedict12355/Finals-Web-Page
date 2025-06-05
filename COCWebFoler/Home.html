@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="COCCss/GeneralCss.css">
+</head>
+<body>
+    <header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img id="logoImg" src="Image/logoImg.png" alt="Click Order Calapan Logo">
+            <h1 class="logo">Click Order Calapan</h1>
+        </div>
+        <div class="auth-buttons" id="authButtons">
+            <button class="auth-button login-btn">Login</button>
+            <button class="auth-button signup-btn">Sign Up</button>
+        </div>
+        <div class="user-profile" id="userProfile" style="display: none;">
+            <span class="user-name" id="displayName">User</span>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="desciption.html">Home</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="other.html">Other</a></li>
+            <li><a href="missionVision.html">Mission & Vision</a></li>
+            <li><a href="Policy.html">Policy & Community rules</a></li>
+            <li><a href="guide.html">Guide</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>       
+    <div id="restaurants-container"></div>
+    <div id="CasaNapoliProduct"></div>
+
+     <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="form-title">Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+                <div class="form-footer">
+                    Don't have an account? <a href="#" id="showSignup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="form-title">Create Your Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" required>
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+                <div class="form-footer">
+                    Already have an account? <a href="#" id="showLogin">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer id="contact">
+        <h2 class="contact-title">📞 Contact Us</h2>
+        <div class="contact-container">
+        </div>
+    </footer>
+    <script src="COCJS/GeneralWeb.js"></script>
+    <script src="COCJS/Home.js"></script>
+    <script src="COCJS/product.js"></script>
+
+</body>
+</html>
